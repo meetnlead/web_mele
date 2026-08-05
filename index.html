@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Implementación, consultoría y soporte de Odoo ERP para automatizar finanzas, operaciones, RR. HH. y ventas. Cotice su proyecto con MNL Software.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#5f36b3">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:title" content="ERP para automatizar y escalar su empresa | MNL Software">
+  <meta property="og:description" content="Consultoría, implementación y acompañamiento de punta a punta.">
+  <title>Implementación ERP para empresas | MNL Software</title>
+
+  <link rel="preconnect" href="https://unpkg.com" crossorigin>
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://mnlsoftware.com/#business",
+        "name": "MNL Software",
+        "url": "https://mnlsoftware.com/",
+        "email": "contacto@mnlsoftware.com",
+        "description": "Consultoría, implementación, desarrollo y soporte de Odoo ERP para empresas.",
+        "areaServed": { "@type": "Country", "name": "Argentina" },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Córdoba",
+          "addressCountry": "AR"
+        },
+        "serviceType": [
+          "Implementación de Odoo ERP",
+          "Consultoría Odoo",
+          "Desarrollo e integraciones Odoo",
+          "Soporte y acompañamiento Odoo"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://mnlsoftware.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Qué procesos se pueden gestionar con Odoo ERP?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Odoo permite integrar finanzas, ventas, compras, inventario, producción, recursos humanos, proyectos, eCommerce y otros procesos en una misma plataforma."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo es una implementación de Odoo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El proceso comprende relevamiento y alcance, configuración y desarrollo, y finalmente salida a producción con acompañamiento."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Odoo puede instalarse en infraestructura privada?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. MNL Software ofrece alternativas de despliegue en VPS y Docker, incluyendo arquitecturas multi-tenant según las necesidades del proyecto."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html" aria-label="MNL Software, página de inicio">
+        <span class="brand__mark" aria-hidden="true">M</span>
+        <span class="brand__name">MNL <strong>Software</strong></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Abrir menú de navegación">
+        <i class="ph ph-list" aria-hidden="true"></i>
+      </button>
+
+      <nav class="primary-nav" id="primary-navigation" aria-label="Navegación principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#metodologia">Metodología</a>
+        <a href="#infraestructura">Infraestructura</a>
+        <a href="#preguntas">FAQ</a>
+        <a class="button button--small button--light" href="#cotizacion" data-scroll-to-form>Quiero una cotización</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow eyebrow--light"><span></span> Consultoría e implementación de Sistema de Gestión</p>
+          <h1 id="hero-title">Automatice y escale su empresa con <em>Expertos</em></h1>
+          <p class="hero__lead">Unifique la gestión de finanzas, operaciones, personas y ventas en una plataforma diseñada alrededor de sus procesos.</p>
+          <div class="hero__actions">
+            <a class="button button--accent" href="#cotizacion" data-scroll-to-form>
+              Quiero que me contacten
+              <i class="ph ph-arrow-up-right" aria-hidden="true"></i>
+            </a>
+            <a class="text-link text-link--light" href="#metodologia">Conozca cómo trabajamos <i class="ph ph-arrow-down" aria-hidden="true"></i></a>
+          </div>
+          <dl class="hero__metrics" aria-label="Beneficios del servicio">
+            <div><dt>360°</dt><dd>Visión del negocio</dd></div>
+            <div><dt>100%</dt><dd>Obtenga capacidad de reporte</dd></div>
+            <div><dt>24/7</dt><dd>Operación disponible</dd></div>
+          </dl>
+        </div>
+
+        <aside class="hero-visual" aria-label="Vista conceptual de una empresa integrada con Odoo">
+          <div class="hero-visual__glow" aria-hidden="true"></div>
+          <div class="dashboard-card">
+            <div class="dashboard-card__top">
+              <span class="dashboard-card__logo"><i class="ph ph-circles-three-plus" aria-hidden="true"></i></span>
+              <span>Vista ejecutiva</span>
+              <i class="ph ph-dots-three" aria-hidden="true"></i>
+            </div>
+            <div class="dashboard-card__chart" aria-hidden="true">
+              <span style="--bar: 42%"></span><span style="--bar: 64%"></span><span style="--bar: 52%"></span><span style="--bar: 82%"></span><span style="--bar: 72%"></span><span style="--bar: 96%"></span>
+            </div>
+            <div class="dashboard-card__summary">
+              <span><small>Procesos activos</small><strong>12</strong></span>
+              <span><small>Eficiencia</small><strong>+38%</strong></span>
+            </div>
+          </div>
+          <div class="floating-chip floating-chip--finance"><i class="ph ph-chart-line-up" aria-hidden="true"></i><span>Finanzas<br><strong>En control</strong></span></div>
+          <div class="floating-chip floating-chip--stock"><i class="ph ph-package" aria-hidden="true"></i><span>Inventario<br><strong>Sincronizado</strong></span></div>
+        </aside>
+      </div>
+      <div class="hero__orb hero__orb--one" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--two" aria-hidden="true"></div>
+    </section>
+
+    <section class="services section" id="servicios" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span></span> Un ecosistema, cuatro pilares</p>
+            <h2 id="services-title">Toda su empresa, conectada.</h2>
+          </div>
+          <p>Elimine silos de información y convierta cada área en una pieza coordinada de su operación.</p>
+        </div>
+
+        <div class="bento-grid">
+          <article class="service-card service-card--core">
+            <div class="service-card__top"><span class="service-card__number">01</span><i class="ph ph-bank" aria-hidden="true"></i></div>
+            <div>
+              <p class="service-card__label">Core / Gestión</p>
+              <h3>Decisiones financieras con datos confiables.</h3>
+              <p>Contabilidad, facturación, compras, tesorería y proyectos dentro de un núcleo operativo trazable.</p>
+            </div>
+            <ul class="tag-list" aria-label="Módulos de Core y Gestión"><li>Contabilidad</li><li>Compras</li><li>Proyectos</li></ul>
+          </article>
+
+          <article class="service-card service-card--operations">
+            <div class="service-card__top"><span class="service-card__number">02</span><i class="ph ph-factory" aria-hidden="true"></i></div>
+            <div>
+              <p class="service-card__label">Operaciones &amp; Supply Chain</p>
+              <h3>Del pedido a la entrega, sin puntos ciegos.</h3>
+              <p>Planificación, producción, inventario, calidad y mantenimiento coordinados en tiempo real.</p>
+            </div>
+            <ul class="tag-list" aria-label="Módulos de Operaciones"><li>Inventario</li><li>MRP</li><li>Calidad</li></ul>
+          </article>
+
+          <article class="service-card service-card--people">
+            <div class="service-card__top"><span class="service-card__number">03</span><i class="ph ph-users-three" aria-hidden="true"></i></div>
+            <div>
+              <p class="service-card__label">Soporte &amp; RR. HH.</p>
+              <h3>Equipos acompañados, servicio continuo.</h3>
+              <p>Gestione talento, ausencias, gastos, help desk y conocimiento con procesos simples y medibles.</p>
+            </div>
+            <ul class="tag-list" aria-label="Módulos de Soporte y Recursos Humanos"><li>Empleados</li><li>Gastos</li><li>Help Desk</li></ul>
+          </article>
+
+          <article class="service-card service-card--growth">
+            <div class="service-card__top"><span class="service-card__number">04</span><i class="ph ph-trend-up" aria-hidden="true"></i></div>
+            <div>
+              <p class="service-card__label">Growth &amp; Canales</p>
+              <h3>Más oportunidades, mejor conversión.</h3>
+              <p>Conecte CRM, ventas, marketing, eCommerce y canales digitales en un recorrido comercial único.</p>
+            </div>
+            <ul class="tag-list" aria-label="Módulos de Growth"><li>CRM</li><li>Ventas</li><li>eCommerce</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="problems section" aria-labelledby="problems-title">
+      <div class="container problems__grid">
+        <div class="problems__intro">
+          <p class="eyebrow eyebrow--light"><span></span> El punto de partida</p>
+          <h2 id="problems-title">Nuestros clientes, usualmente buscan resolver estos escenarios:</h2>
+          <p>Transformamos procesos fragmentados en una gestión integrada, visible y preparada para escalar.</p>
+        </div>
+        <div class="problem-list">
+          <article><i class="ph ph-files" aria-hidden="true"></i><div><h3>Información duplicada</h3><p>Datos repartidos entre planillas de Excel, correos y aplicaciones que no conversan.</p></div></article>
+          <article><i class="ph ph-eye-slash" aria-hidden="true"></i><div><h3>Poca trazabilidad</h3><p>Producción sin punta de linea, Remitos sin relación por deposito, por operación, gestión de mora sin facturas asociadas.</p></div></article>
+          <article><i class="ph ph-arrows-clockwise" aria-hidden="true"></i><div><h3>Gestiones dispersas</h3><p>Vincule centros de costo a sus Obras, desarrollos o licitaciones con relación al presupuesto, gasto diario y costo absorvidos.</p></div></article>
+          <article><i class="ph ph-plugs-connected" aria-hidden="true"></i><div><h3>Puntos ciegos al producir o reparar</h3><p>Controle mermas, trabaje con stock previsto, planifique la producción, haga control de calidad, desvíe procesos a mantenimiento y/o taller.</p></div></article>
+          <article><i class="ph ph-plugs-connected" aria-hidden="true"></i><div><h3>Stock roto, Contabilidad a medias</h3><p>Asocie remito parcial o total a sus facturas de venta. Gestione moras y cuenta corriente. Concilie caja y movimientos bancarios.</p></div></article>
+          <article><i class="ph ph-plugs-connected" aria-hidden="true"></i><div><h3>Comercio exterior sin coordinación</h3><p>Importe / exporte productos, adjunte documentos de importación, permiso de embarque, concilie pagos bancarios.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="method section" id="metodologia" aria-labelledby="method-title">
+      <div class="container">
+        <div class="section-heading section-heading--center">
+          <div>
+            <p class="eyebrow"><span></span> Metodología</p>
+            <h2 id="method-title">Implementación en 3 pasos.</h2>
+          </div>
+          <p>Un camino claro desde el diagnóstico hasta una operación estable.</p>
+        </div>
+
+        <ol class="method-list">
+          <li class="method-card">
+            <span class="method-card__number">01</span>
+            <div class="method-card__icon"><i class="ph ph-magnifying-glass" aria-hidden="true"></i></div>
+            <p class="method-card__phase">Discovery</p>
+            <h3>Relevamiento y Scoping</h3>
+            <p>Entendemos objetivos, usuarios, procesos y brechas para definir alcance, prioridades y una hoja de ruta realista.</p>
+          </li>
+          <li class="method-card">
+            <span class="method-card__number">02</span>
+            <div class="method-card__icon"><i class="ph ph-sliders-horizontal" aria-hidden="true"></i></div>
+            <p class="method-card__phase">Construcción</p>
+            <h3>Configuración y Desarrollo</h3>
+            <p>Parametrizamos, migramos datos y desarrollamos solo las integraciones que agregan valor al negocio.</p>
+          </li>
+          <li class="method-card">
+            <span class="method-card__number">03</span>
+            <div class="method-card__icon"><i class="ph ph-rocket-launch" aria-hidden="true"></i></div>
+            <p class="method-card__phase">Activación</p>
+            <h3>Go-Live y Acompañamiento</h3>
+            <p>Capacitamos a los equipos, estabilizamos la salida y acompañamos la mejora continua de la solución.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="quote section" id="cotizacion" aria-labelledby="quote-title">
+      <div class="container quote__grid">
+        <div class="quote__content">
+          <p class="eyebrow eyebrow--light"><span></span> Hablemos de su proyecto</p>
+          <h2 id="quote-title">¿Listo para ordenar y escalar su operación?</h2>
+          <p>Comparta cuatro datos básicos. Un asesor analizará su necesidad y le responderá por correo.</p>
+          <div class="quote__assurance">
+            <i class="ph ph-shield-check" aria-hidden="true"></i>
+            <span><strong>Conversación con un experto</strong><br>Obtenga una devolución real</span>
+          </div>
+        </div>
+
+        <form class="quote-form" id="quote-form" action="https://formspree.io/f/YOUR_ENDPOINT" method="post" autocomplete="off" data-endpoint="https://formspree.io/f/YOUR_ENDPOINT" novalidate>
+          <div class="quote-form__heading">
+            <span>Paso siguiente</span>
+            <p>Cuéntenos sobre su empresa</p>
+          </div>
+
+          <div class="form-field">
+            <label for="name">Nombre</label>
+            <input id="name" name="nombre" type="text" autocomplete="off" required minlength="2" placeholder="Su nombre">
+            <small class="form-field__error" data-error-for="name" aria-live="polite"></small>
+          </div>
+
+          <div class="form-field">
+            <label for="company">Empresa</label>
+            <input id="company" name="empresa" type="text" autocomplete="off" required minlength="2" placeholder="Nombre de la empresa">
+            <small class="form-field__error" data-error-for="company" aria-live="polite"></small>
+          </div>
+
+          <div class="form-field form-field--wide">
+            <label for="email">Email corporativo</label>
+            <input id="email" name="email" type="email" inputmode="email" autocomplete="off" required placeholder="nombre@empresa.com">
+            <small class="form-field__error" data-error-for="email" aria-live="polite"></small>
+          </div>
+
+          <div class="form-field">
+            <label for="users">Cantidad de usuarios</label>
+            <input id="users" name="cantidad_usuarios" type="number" inputmode="numeric" autocomplete="off" required min="1" max="10000" placeholder="Ej. 25">
+            <small class="form-field__error" data-error-for="users" aria-live="polite"></small>
+          </div>
+
+          <div class="form-field">
+            <label for="priority">Prioridad principal</label>
+            <select id="priority" name="prioridad" required autocomplete="off">
+              <option value="" selected disabled>Seleccione una opción</option>
+              <option value="Finanzas">Finanzas</option>
+              <option value="Inventario">Inventario</option>
+              <option value="Ventas">Ventas</option>
+              <option value="Producción">Producción</option>
+            </select>
+            <small class="form-field__error" data-error-for="priority" aria-live="polite"></small>
+          </div>
+
+          <input type="hidden" name="_subject" value="Nueva solicitud de cotización Odoo">
+          <button class="button button--submit form-field--wide" type="submit">
+            <span>Quiero que me contacten</span>
+            <i class="ph ph-arrow-right" aria-hidden="true"></i>
+          </button>
+          <p class="quote-form__privacy form-field--wide"><i class="ph ph-lock-key" aria-hidden="true"></i> Recibirá una respuesta por parte de nuestro equipo vía email.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="infrastructure section" id="infraestructura" aria-labelledby="infrastructure-title">
+      <div class="container infrastructure__inner">
+        <div>
+          <p class="eyebrow"><span></span> Infraestructura flexible</p>
+          <h2 id="infrastructure-title">Opere en la nube o en un servidor local.</h2>
+        </div>
+        <ul class="tech-list" aria-label="Tecnologías de infraestructura">
+          <li><i class="ph ph-cloud" aria-hidden="true"></i><span><strong>VPS</strong> Nube privada</span></li>
+          <li><i class="ph ph-cube" aria-hidden="true"></i><span><strong>Docker</strong> Despliegue portable</span></li>
+          <li><i class="ph ph-stack" aria-hidden="true"></i><span><strong>Multi-Tenant</strong> Arquitectura escalable</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="faq section" id="preguntas" aria-labelledby="faq-title">
+      <div class="container faq__grid">
+        <div>
+          <p class="eyebrow"><span></span> Preguntas frecuentes</p>
+          <h2 id="faq-title">Respuestas antes de empezar.</h2>
+        </div>
+        <div class="faq__list">
+          <details>
+            <summary>¿Porque elegirnos?<i class="ph ph-plus" aria-hidden="true"></i></summary>
+            <p>Nuestra experiencia es técnica con más de 10 años de cara al cliente, entendiendo su negocio y traduciendo requerimientos.</p>
+          </details>
+          <details>
+            <summary>¿Cómo es una implementación standard?<i class="ph ph-plus" aria-hidden="true"></i></summary>
+            <p>Comenzamos con relevamiento y alcance, continuamos con configuración y desarrollo, y finalizamos con la salida a producción y el acompañamiento mediante capacitación y Soporte.</p>
+          </details>
+          <details>
+            <summary>¿Puedo operar en infraestructura privada?<i class="ph ph-plus" aria-hidden="true"></i></summary>
+            <p>Sí. Ofrecemos alternativas de despliegue en VPS y Docker, incluyendo arquitecturas multi-tenant según las necesidades del proyecto.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__top">
+      <div>
+        <a class="brand brand--footer" href="index.html" aria-label="MNL Software, página de inicio">
+          <span class="brand__mark" aria-hidden="true">M</span>
+          <span class="brand__name">MNL <strong>Software</strong></span>
+        </a>
+        <p>Tecnología aplicada a procesos que funcionan.</p>
+      </div>
+      <nav aria-label="Enlaces del pie de página">
+        <a href="#servicios">Servicios</a>
+        <a href="#metodologia">Metodología</a>
+        <a href="#preguntas">FAQ</a>
+        <a href="mailto:contacto@mnlsoftware.com">contacto@mnlsoftware.com</a>
+      </nav>
+    </div>
+    <div class="container site-footer__bottom">
+      <p>© <span data-current-year></span> MNL Software. Todos los derechos reservados.</p>
+      <p>Córdoba, Argentina</p>
+    </div>
+  </footer>
+
+  <dialog class="confirmation-dialog" id="confirmation-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-message">
+    <div class="confirmation-dialog__icon" aria-hidden="true"><i class="ph ph-check"></i></div>
+    <p class="confirmation-dialog__eyebrow">Solicitud recibida</p>
+    <h2 id="dialog-title">Gracias por contactarnos.</h2>
+    <p id="dialog-message">Su solicitud está en proceso. Recibirá un correo respuesta por parte de contacto@mnlsoftware.com y un asesor se pondrá en contacto contigo.</p>
+    <button class="button button--dialog" type="button" data-close-dialog>Cerrar y continuar</button>
+  </dialog>
+</body>
+</html>
