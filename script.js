@@ -109,7 +109,7 @@
 
     if (!response.ok) throw new Error('Form submission failed');
     const result = await response.json();
-    if (result.success === false) throw new Error('Form submission rejected');
+    if (result.success === false || result.success === 'false') throw new Error('Form submission rejected');
     return result;
   };
 
