@@ -98,12 +98,6 @@
   };
 
   const submitPayload = async (endpoint, payload) => {
-    const isDemoEndpoint = endpoint.includes('YOUR_ENDPOINT');
-    if (isDemoEndpoint) {
-      await Promise.resolve();
-      return { ok: true };
-    }
-
     const response = await fetch(endpoint, {
       method: 'POST',
       headers: { 'Accept': 'application/json' },
@@ -114,7 +108,9 @@
     });
 
     if (!response.ok) throw new Error('Form submission failed');
-    return response;
+    const result = await response.json();
+    if (result.success === false) throw new Error('Form submission rejected');
+    return result;
   };
 
   const showConfirmation = () => {
@@ -157,20 +153,20 @@
       const endpoint = form.dataset.endpoint || form.action;
       let payload = new FormData(form);
 
-      form.reset();
-      clearValidation(form);
       submitButton.disabled = true;
       buttonLabel.textContent = 'Enviando…';
 
       try {
         await submitPayload(endpoint, payload);
+        form.reset();
+        clearValidation(form);
         showConfirmation();
       } catch (error) {
         window.alert(MESSAGES.sendError);
       } finally {
         payload = null;
         submitButton.disabled = false;
-        buttonLabel.textContent = 'Solicitar cotización';
+        buttonLabel.textContent = 'Quiero que me contacten';
       }
     });
 
