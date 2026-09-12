@@ -135,6 +135,38 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.65rem); }
 .floating-chip--stock > i { background: #ffe9df; color: #bd432d; }
 
 /* ========================================
+   Componentes: Referencias comerciales
+   ======================================== */
+.clients { overflow: hidden; background: var(--color-surface); }
+.clients__heading { margin-bottom: clamp(2rem, 4vw, 3rem); }
+.clients-gallery {
+  display: flex;
+  gap: 1rem;
+  margin-inline: -1rem;
+  padding: .25rem 1rem 1rem;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-purple-600) var(--color-purple-100);
+}
+.client-card {
+  flex: 0 0 min(82vw, 20rem);
+  display: grid;
+  place-items: center;
+  min-height: 12rem;
+  padding: 1.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+  scroll-snap-align: center;
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+}
+.client-card:hover { transform: translateY(-4px); border-color: rgba(95, 54, 179, .38); box-shadow: var(--shadow-lg); }
+.client-card img { width: auto; max-width: 100%; max-height: 8.5rem; object-fit: contain; }
+
+/* ========================================
    Componentes: Bento de servicios
    ======================================== */
 .services { background: var(--color-canvas); }
@@ -252,6 +284,8 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.65rem); }
 @media (min-width: 42rem) {
   .section-heading { grid-template-columns: 1.25fr .75fr; align-items: end; }
   .section-heading--center { grid-template-columns: 1fr; }
+  .clients-gallery { display: grid; grid-template-columns: repeat(3, 1fr); margin-inline: 0; padding: .25rem; overflow: visible; }
+  .client-card { min-width: 0; min-height: 11rem; padding: 1.25rem; }
   .bento-grid { grid-template-columns: repeat(2, 1fr); }
   .method-list { grid-template-columns: repeat(3, 1fr); }
   .quote-form { grid-template-columns: repeat(2, 1fr); }
@@ -280,6 +314,7 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.65rem); }
 }
 
 @media (min-width: 68rem) {
+  .clients-gallery { grid-template-columns: repeat(5, 1fr); }
   .bento-grid { grid-template-columns: 1.12fr .88fr .88fr 1.12fr; }
   .service-card:nth-child(2), .service-card:nth-child(3) { transform: translateY(2rem); }
   .service-card:nth-child(2):hover, .service-card:nth-child(3):hover { transform: translateY(calc(2rem - 6px)); }
